@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Site casas</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav class="menu">
+        <a class="logo" href="/">Logo</a>
+        <div class="mobile-menu">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+        <ul class="nav-list">
+          <li><a href="#">Início</a></li>
+          <li><a href="#casas-em-alta">Em alta</a></li>
+          <li><a href="#">Casas</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#footer">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <!-- slider -->
+
+      <div class="slider">
+        <div class="slider-inner">
+          <div class="slide">
+            <img src="img/img1.jpg" alt="Casa 1" />
+          </div>
+          <div class="slide">
+            <img src="img/img2.jpg" alt="Casa 2" />
+          </div>
+          <div class="slide">
+            <img src="img/img3.jpg" alt="Casa 3" />
+          </div>
+        </div>
+        <div class="slider-controls">
+          <div class="arrow prev">&#8249;</div>
+          <div class="arrow next">&#8250;</div>
+        </div>
+      </div>
+
+      <!-- casas em alta -->
+
+      <section id="casas-em-alta">
+        <div class="linha">
+          <h1>Casas em Alta</h1>
+        </div>
+        <div class="container">
+          <div class="house-card">
+            <div class="image">
+              <img src="img/img1.jpg" alt="Casa 1" />
+            </div>
+            <div class="details">
+              <h2>Casa 1</h2>
+              <p>Descrição da casa 1...</p>
+              <p>Preço: R$ XXX.XXX</p>
+              <a href="#" class="saiba-mais-link">Saiba Mais</a>
+            </div>
+          </div>
+
+          <div class="house-card">
+            <div class="image">
+              <img src="img/img2.jpg" alt="Casa 2" />
+            </div>
+            <div class="details">
+              <h2>Casa 2</h2>
+              <p>Descrição da casa 2...</p>
+              <p>Preço: R$ XXX.XXX</p>
+              <a href="#" class="saiba-mais-link">Saiba Mais</a>
+            </div>
+          </div>
+
+          <div class="house-card">
+            <div class="image">
+              <img src="img/img3.jpg" alt="Casa 3" />
+            </div>
+            <div class="details">
+              <h2>Casa 3</h2>
+              <p>Descrição da casa 3...</p>
+              <p>Preço: R$ XXX.XXX</p>
+              <a href="#" class="saiba-mais-link">Saiba Mais</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="sobre">
+        <div class="sobre">
+          <div class="linha">
+            <h1>Sobre nossa empresa</h1>
+          </div>
+
+          <div class="section">
+            <h2 class="section-title">Nossa Missão</h2>
+            <div class="section-content">
+              <div class="content">
+                <p>
+                  Transformar suas férias em momentos inesquecíveis, oferecendo
+                  o melhor em conforto, qualidade e hospitalidade.
+                </p>
+                <p>
+                  Nossa missão é oferecer momentos de paz, tranquilidade e
+                  conexão com a natureza, proporcionando uma experiência .
+                </p>
+              </div>
+              <div class="image">
+                <img src="img/missao.jfif" alt="Nossa Missão" />
+              </div>
+            </div>
+          </div>
+
+          <div class="section">
+            <h2 class="section-title">Nossos Valores</h2>
+            <div class="section-content">
+              <div class="content">
+                <p>
+                  <i class="fas fa-check-circle icon"></i> Hospitalidade:
+                  Priorizar a satisfação e o conforto dos hóspedes, oferecendo
+                  um serviço caloroso, amigável e acolhedor.
+                </p>
+                <p>
+                  <i class="fas fa-check-circle icon"></i> Excelência:
+                  Comprometimento com a excelência em todos os aspectos, desde a
+                  qualidade das hospedagens até o atendimento ao cliente.
+                </p>
+                <p>
+                  <i class="fas fa-check-circle icon"></i> Colaboração:
+                  Trabalhar em parceria com a comunidade local, fornecedores e
+                  colaboradores para promover o desenvolvimento sustentável e o
+                  bem-estar geral.
+                </p>
+              </div>
+              <div class="image">
+                <img src="img/sobre2.jfif" alt="Nossos Valores" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="footer">
+        <footer class="footer">
+          <div class="social-icons">
+            <a href="#" id="face"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" id="twt"><i class="fab fa-twitter"></i></a>
+            <a href="#" id="inst"><i class="fab fa-instagram"></i></a>
+            <a href="#" id="zap"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </footer>
+      </section>
+      <div class="floating-button" onclick="scrollToTop()">
+        <i class="fas fa-arrow-up"></i>
+      </div>
+    </main>
+
+    <script
+      src="https://kit.fontawesome.com/c7dc62a449.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/scroll.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>

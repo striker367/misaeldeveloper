@@ -1,0 +1,404 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+a:hover {
+  color: rgba(8, 0, 255, 0.202);
+  transition: 0.5s;
+}
+
+.logo {
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+  background: #d2691e;
+  height: 8vh;
+}
+
+main {
+  background: url("bg.jpg") no-repeat center center;
+  background-size: cover;
+  height: 92vh;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+}
+
+.nav-list li {
+  letter-spacing: 3px;
+  margin-left: 32px;
+}
+
+.mobile-menu {
+  display: none;
+  cursor: pointer;
+}
+
+.mobile-menu div {
+  width: 32px;
+  height: 2px;
+  background: #fff;
+  margin: 8px;
+  transition: 0.3s;
+}
+
+@media (max-width: 999px) {
+  body {
+    overflow-x: hidden;
+  }
+  .nav-list {
+    position: absolute;
+    top: 8vh;
+    right: 0;
+    width: 50vw;
+    height: 92vh;
+    background: #23232e;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in;
+    z-index: 100;
+  }
+  .mobile-menu {
+    display: block;
+  }
+}
+
+.nav-list.active {
+  transform: translateX(0);
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.mobile-menu.active .line1 {
+  transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.mobile-menu.active .line2 {
+  opacity: 0;
+}
+
+.mobile-menu.active .line3 {
+  transform: rotate(45deg) translate(-5px, -7px);
+}
+
+/* slider */
+
+.slider {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  text-align: center;
+  margin-top: 10vh;
+}
+
+.slider-inner {
+  display: flex;
+  transition: transform 0.8s;
+}
+
+.slide {
+  flex: 0 0 100%;
+  height: 400px;
+}
+.slide img {
+  width: 70vw;
+  height: 400px;
+  padding: 0 5%;
+}
+
+/* Estilos para as setas de navegação */
+.slider-controls {
+  position: absolute;
+  top: 50%;
+  padding: 0 5%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+}
+
+.slider-controls .arrow {
+  cursor: pointer;
+  font-size: 80px;
+  color: #d2691e;
+}
+
+/* casas em altas */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  text-align: center;
+}
+h2 {
+  margin-top: 2px;
+  color: #d2691e;
+}
+p {
+  margin-top: 2px;
+  padding: 2px;
+  color: #d2691e;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  margin-top: 60px;
+}
+
+.house-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.house-card .image {
+  flex: 1 1 300px;
+  margin-right: 20px;
+  display: flex;
+}
+
+.house-card .details {
+  flex: 1 1 400px;
+}
+
+.house-card img {
+  max-width: 100%;
+  height: 45vh;
+  border: 1px solid #d2691e;
+}
+
+@media screen and (max-width: 768px) {
+  .house-card {
+    flex-direction: column;
+    display: flex;
+  }
+  .house-card img {
+    min-width: 100%;
+    height: 45vh;
+  }
+}
+#casas-em-alta {
+  margin-top: 60px;
+}
+
+/* sobre */
+
+h1 {
+  text-align: center;
+}
+
+.sobre {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.section {
+  margin-bottom: 4px;
+  margin-top: 60px;
+}
+
+.section-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.section-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section-content .content {
+  flex: 1;
+  margin-right: 40px;
+}
+
+.section-content .content p {
+  margin-bottom: 10px;
+}
+
+.section-content .image {
+  flex: 1;
+}
+
+.icon {
+  font-size: 40px;
+  margin-right: 10px;
+}
+.image img {
+  min-width: 350px;
+  height: 250px;
+  border: 1px solid #d2691e;
+}
+
+@media screen and (max-width: 768px) {
+  .section-content {
+    flex-direction: column;
+  }
+
+  .section-content .content,
+  .section-content .image {
+    margin-right: 0;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+}
+/* footer */
+
+.footer {
+  background-color: #d2691e;
+  padding: 20px;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.footer .social-icons {
+  margin-top: 10px;
+}
+
+.footer .social-icons a {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-color: #333;
+  color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 30px;
+  margin: 0 5px;
+}
+#face:hover {
+  color: #3b5998;
+}
+#twt:hover {
+  color: #1da1f2;
+}
+#inst:hover {
+  color: #833ab4;
+}
+#zap:hover {
+  color: #25d366;
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    padding: 10px;
+  }
+
+  .footer .social-icons {
+    margin-top: 5px;
+  }
+
+  .footer .social-icons a {
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+  }
+}
+
+/* botao flutuante */
+.floating-button {
+  position: fixed;
+  bottom: 60px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background-color: #d2691e;
+  color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px;
+  font-size: 20px;
+  cursor: pointer;
+  border: 2px solid #d2691e;
+}
+.floating-button:hover {
+  color: #d2691e;
+  background-color: white;
+}
+/* saiba mais */
+
+/* Estilos CSS */
+.saiba-mais-link {
+  display: inline-block;
+  color: #3441ef;
+  text-decoration: none;
+  position: relative;
+}
+
+.saiba-mais-link::after {
+  content: "...";
+  position: absolute;
+  top: 0;
+  right: -10px;
+}
+
+.saiba-mais-link:hover::after {
+  content: "";
+}
+
+/* linha h1 */
+.linha {
+  width: 100%;
+  height: 3px;
+  background-color: #d2691e;
+  position: relative;
+  margin-top: 20px;
+}
+
+.linha h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  color: #d2691e;
+  padding: 0 10px;
+  font-weight: bold;
+}
